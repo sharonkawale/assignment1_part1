@@ -1,6 +1,6 @@
-#inlcude <stdio.h>
+#include <stdio.h>
 //function
-main() {
+int main() {
     //data types
     printf("print successful");
 return 0;
