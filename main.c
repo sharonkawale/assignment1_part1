@@ -4,17 +4,36 @@
 
 int main() {
 	FILE *input;
-	input = fopen("input.txt", "r");
-	
-	while(feof(input) ==0 ) {
-	    char c;
+	input = fopen("alphabet.txt", "r");      //read input(alphabet) and assign to pointer
+  char letter;
+  int num ;
+  
+  
+	while(feof(input) ==0 ) {               
+	    
 	    //read a character
-	    fscanf(input, "%c", &c);
+	    fscanf(input, "%c", &letter);
+	    //assign message letter to a number
+	   if (letter >= 'A' && letter <= 'Z') {
+	  num = letter - 'A';
+	  printf("%d\n", num);
+  
+	} else if (letter >= 'a' && letter <= 'z') {
+	    
+	    num = letter - 'a';
+	    printf("%d\n", num);
+	}
+	   
+	
+ 
+	    //int e = (m+k)(mod26)
 	    
 	   
 	    //print that character to the console
-	    printf("%c", c);
+	    
 	    
 	}
+	
+	
 	return 0;
 }
