@@ -7,11 +7,9 @@ int main() {
 	FILE *input_b;   //this is a pointer to the message input text
 	input_b = fopen("ascii_alpha.txt", "r");   //open and read the message text
 	
-	FILE *input_a;   //this is a pointer to the alphabet input text
-	input_a = fopen("alphabet.txt", "r");   //read input(alphabet) and assign to pointer
 	
-	char letter, e_l;
-	int k=2, m, e_n;
+	char letter;
+	int k = -3, m, en;
 	
 	
   
@@ -26,23 +24,31 @@ int main() {
 	    m = letter;
 	    
 	   if (letter >= 'A' && letter <= 'Z') {
+	       en = (m+k);
 	       
-	       e_n = ((m+k));
-	       e_l = e_n;
-	       printf("%c", e_n);
-	    } 
+	       if (en < 0) {
+	          en + 26;
+	          printf("%c", en); //c changes the number to a character
+	      }
+	      
+	      else if (en > 0) {
+	          	      
+	      printf("%c", en); } 
+	      } 
 	       
-	    else if (letter >= 'a' && letter <= 'z') {
-	    
-	    
-	    m = m - 32;   //make letter capital
-	    e_n = ((m+k));
-	    e_l = e_n;
-	    printf("%c", e_n); 
-	    
-	    }  
+	  else if (letter >= 'a' && letter <= 'z') {
+	      m = m - 32;   //make letter capital
+	      en = (m+k);
+	      
+	      if (en < 0) {
+	          en + 26;
+	          printf("%c", en); }
+	      else if (en > 0) {
+	          
+	      printf("%c", en); }  }
 	    
 	    else {
+	   
 	   printf("%c", letter);  }
 	    
 	}
