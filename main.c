@@ -1,4 +1,6 @@
 #include <stdio.h> 
+
+#include <math.h>
 //THE PURPOSE OF THIS CODE IS TO ENCRYPT INPUT TEXT AND PRINT THE WORDS IN CAPITAL LETTERS
 //THE ENCRYPTION STYLE IS A ROTATION CYPHER
 
@@ -9,7 +11,9 @@ int main() {
 	
 	
 	char letter;
-	int k = 1, m, en;
+	int k = -2, m, en;
+	
+	
 	
 	
   
@@ -23,10 +27,20 @@ int main() {
 	    
 	    m = letter;
 	    
+	   /* if (k<0){
+	        addons =  65 + 26;
+	        
+	    }
+	    else {
+	        addons = 65;
+	    } */
+	    
 	   if (letter >= 'A' && letter <= 'Z') {
 	      
 	      en = (m+k-65)%26 + 65;
-	       
+	       if (en<65){
+	           en = en + 26;
+	       }
 	       
 	          printf("%c", en); //c changes the number to a character
      } 
@@ -34,7 +48,10 @@ int main() {
 	       
 	  else if (letter >= 'a' && letter <= 'z') {
 	      m = m - 32;   //make letter capital
-	      en = (m+k-65)%26 +65;
+	      en = (m+k-65)%26 + 65;
+	      if (en < 65){
+	          en = en + 26;
+	      }
 	      
 	     
 	          printf("%c", en); }
