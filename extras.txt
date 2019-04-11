@@ -19,6 +19,18 @@
 	
 	
 	
+	//this is a loop to assign alphabet to numbers       
+	while(feof(input_a) ==0 ) {        
+	    fscanf(input_a, "%c", &l);
+	    //read a character
+	    if (l >= 'A' && l <= 'Z') {
+	  k = l - 'A';
+	   }
+
+} 
+
+	
+	
 	
 	
 	
@@ -34,21 +46,21 @@
 	    fscanf(input_a, "%c", &a_l);
 	    //assign message letter to a number
 	   if (a_l >= 'A' && a_l <= 'Z') {
-	  num_b = a_l - 'A';
+	       k = a_l - 'A';
  
-	} FILE *input_a;   //this is a pointer to the alphabet input text
-	input_a = fopen("alphabet.txt", "r");   //read input(alphabet) and assign to pointer
-	
-	
-	//this is a loop to assign alphabet to numbers       
-	/*while(feof(input_a) ==0 ) {        
-	    
-	    //read a character
-	    fscanf(input_a, "%c", &a_l);
-	    //assign message letter to a number
-	   if (a_l >= 'A' && a_l <= 'Z') {
-	  num_b = a_l - 'A';
+
  
 	} 
 } */
+} 
+
+
+	//this is a loop to assign alphabet to numbers       
+	while(feof(input_a) ==0 ) {        
+	    fscanf(input_a, "%c", &l);
+	    //read a character
+	    if (l >= 'A' && l <= 'Z') {
+	  k = l - 'A';
+	   }
+
 } 
