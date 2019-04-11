@@ -64,3 +64,15 @@
 	   }
 
 } 
+
+
+
+     if (message >= 65 && message <= 90) {
+         
+         printf("%c\n", d);
+     } 
+     
+     else {
+         printf("%c\n", message);
+         
+         }
