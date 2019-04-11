@@ -9,7 +9,7 @@ int main() {
 	
 	
 	char letter;
-	int k = -3, m, en;
+	int k = 1, m, en;
 	
 	
   
@@ -24,28 +24,21 @@ int main() {
 	    m = letter;
 	    
 	   if (letter >= 'A' && letter <= 'Z') {
-	       en = (m+k);
-	       
-	       if (en < 0) {
-	          en + 26;
-	          printf("%c", en); //c changes the number to a character
-	      }
 	      
-	      else if (en > 0) {
-	          	      
-	      printf("%c", en); } 
-	      } 
+	      en = (m+k-65)%26 + 65;
+	       
+	       
+	          printf("%c", en); //c changes the number to a character
+     } 
+
 	       
 	  else if (letter >= 'a' && letter <= 'z') {
 	      m = m - 32;   //make letter capital
-	      en = (m+k);
+	      en = (m+k-65)%26 +65;
 	      
-	      if (en < 0) {
-	          en + 26;
+	     
 	          printf("%c", en); }
-	      else if (en > 0) {
-	          
-	      printf("%c", en); }  }
+	     
 	    
 	    else {
 	   
