@@ -1,4 +1,6 @@
 #include<stdio.h>
+//rotation decryption with a given key
+
 
 int main()
 {
@@ -14,12 +16,15 @@ int main()
 
     //scan and assign letters
     
-    while(k >=0  && k <=25){
-        printf("message with %d: \n", k);
+   
+
+    
+    while((feof(input) == 0)) {
         
-        while(feof(input) == 0){
         fscanf(input, "%c", &message);
-        
+        while( k >=0  && k <=25) {
+            printf("message with %d: \n", k);
+                
         c = message;  //make inputs ascii numbers
         
         if (c >= 65 && c <=90) {
@@ -31,14 +36,18 @@ int main()
        }
        else {
            printf("%c", message); }
-   }
-   
-  
+           k++; 
+   } 
+            
+        }
+        return 0;
+    }
     
-       k++;    }
+   
+        
          
          
-     }
+     
 
  
 
