@@ -3,6 +3,7 @@
 #include <math.h>
 //THE PURPOSE OF THIS CODE IS TO ENCRYPT INPUT TEXT AND PRINT THE WORDS IN CAPITAL LETTERS
 //THE ENCRYPTION STYLE IS A ROTATION CYPHER
+//this is task 1
 
 int main() {
    
@@ -11,12 +12,8 @@ int main() {
 	
 	
 	char letter;
-	int k = -2, m, en;
+	int k = 24, m, en;
 	
-	
-	
-	
-  
   
 	//this is a loop to assign each message letter to ascii characters
 	while(feof(input_b) ==0 ) {               
@@ -31,7 +28,7 @@ int main() {
 	        addons =  65 + 26;
 	        
 	    }
-	    else {
+	    else { 
 	        addons = 65;
 	    } */
 	    

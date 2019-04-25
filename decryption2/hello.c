@@ -12,18 +12,18 @@ int main()
    //declare variables
   char message;
     int c, d, k = 0;
-
-
+    
     //scan and assign letters
     
    
 
     
-    while((feof(input) == 0)) {
+    while( k >=0  && k <=25) {
         
         fscanf(input, "%c", &message);
-        while( k >=0  && k <=25) {
-            printf("message with %d: \n", k);
+        printf("message with %d: \n", k);
+         while((feof(input) == 0)){
+            
                 
         c = message;  //make inputs ascii numbers
         
@@ -36,10 +36,12 @@ int main()
        }
        else {
            printf("%c", message); }
-           k++; 
+           
+    k++; 
    } 
-            
+           
         }
+        
         return 0;
     }
     
