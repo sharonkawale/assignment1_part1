@@ -1,0 +1,83 @@
+['A'] == "Q"
+['B'] == "W"
+['C'] == "E"
+['D'] == "R"
+['E'] == "T"
+['F'] == "Y"
+['G'] == "U"
+['H'] == "I"
+['I'] == "O"
+['J'] = "P"
+['K'] = "A"
+['L'] = "S"
+['M'] = "D"
+['N'] = "F"
+['O'] = "G"
+['P'] = "H"
+['Q'] = "J"
+['R'] = "K"
+['S'] = "L"
+['T'] = "Z"
+['U'] = "X"
+['V'] = "C"
+['W'] = "V"
+['X'] = "B"
+['Y'] = "N"
+['Z'] = "M"
+
+
+
+['A'] = 'Q'
+	['B'] == "W"
+	['C'] == "E"
+	['D'] == "R"
+	['E'] == "T"
+	['F'] == "Y"
+	['G'] == "U"
+	['H'] == "I"
+    ['I'] == "O"
+    ['J'] = "P"
+	['K'] = "A"
+	['L'] = "S"
+	['M'] = "D"
+	   ['N'] = "F"
+	   ['O'] = "G"
+	   ['P'] = "H"
+	   ['Q'] = "J"
+	   ['R'] = "K"
+	   ['S'] = "L"
+	   ['T'] = "Z"
+	   ['U'] = "X"
+	   ['V'] = "C"
+	   ['W'] = "V"
+	   ['X'] = "B"
+	   ['Y'] = "N"
+	   ['Z'] = "M"
+	   
+	   
+	   if (*inchar == 'A') {*inchar = 'G';}
+    if (*inchar == 'B') {*inchar = 'H';}
+    if (*inchar == 'C') {*inchar = 'B';}
+    if (*inchar == 'D') {*inchar = 'I';}
+    if (*inchar == 'E') {*inchar = 'A';}
+    if (*inchar == 'F') {*inchar = 'L';}
+    if (*inchar == 'G') {*inchar = 'U';}
+    if (*inchar == 'H') {*inchar = 'F';}
+    if (*inchar == 'I') {*inchar = 'P';}
+    if (*inchar == 'J') {*inchar = 'J';}
+    if (*inchar == 'K') {*inchar = 'K';}
+    if (*inchar == 'L') {*inchar = 'T';}
+    if (*inchar == 'M') {*inchar = 'V';}
+    if (*inchar == 'N') {*inchar = 'M';}
+    if (*inchar == 'O') {*inchar = 'M';}
+    if (*inchar == 'P') {*inchar = 'O';}
+    if (*inchar == 'Q') {*inchar = 'E';}
+    if (*inchar == 'R') {*inchar = 'S';}
+    if (*inchar == 'S') {*inchar = 'N';}
+    if (*inchar == 'T') {*inchar = 'Q';}
+    if (*inchar == 'U') {*inchar = 'D';}
+    if (*inchar == 'V') {*inchar = 'R';}
+    if (*inchar == 'W') {*inchar = 'W';}
+    if (*inchar == 'X') {*inchar = 'Z';}
+    if (*inchar == 'Y') {*inchar = 'S';}
+    

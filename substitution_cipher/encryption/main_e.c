@@ -1,9 +1,12 @@
+/* Hello World program */
+
 #include <stdio.h> 
 
-#include <math.h>
-//THE PURPOSE OF THIS CODE IS TO ENCRYPT INPUT TEXT AND PRINT THE WORDS IN CAPITAL LETTERS
-//THE ENCRYPTION STYLE IS A ROTATION CYPHER
-//this is task 1
+#include <math.h>    
+//THE PURPOSE OF THIS CODE IS TO ENCRYPT INPUT TEXT USING SUBSTITUTION CYPHERS AND PRINT THE WORDS IN CAPITAL LETTERS
+//THE ENCRYPTION STYLE IS A SUBSTITUTION CYPHER  
+
+//this looks more like a rotation cipher    
 
 int main() {
    
@@ -28,7 +31,7 @@ int main() {
 	        addons =  65 + 26;
 	        
 	    }
-	    else { 
+	    else {
 	        addons = 65;
 	    } */
 	    
